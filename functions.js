@@ -19,3 +19,6 @@ function getAnswer() {
     })
 }
 
+function redirectToCountdown() {
+    window.location.href="/countdown/index.html";
+}
