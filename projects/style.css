@@ -1,0 +1,32 @@
+html, body {
+    background-color: #101010;
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+dt  {
+    display: list-item;
+    margin: 0 1em;
+    font-size: 1.5em; 
+    font-weight: bold
+}
+
+dd {
+    text-indent: -2.5em;
+    padding-left: 1.5em;
+    margin-top: 0.5em;
+
+    font-size: 1em;
+}
+a {
+    color: white
+}
+
+a:visited{
+    color: white;
+}
+
+a:hover {
+    transition: 0.3s;
+    color: mediumpurple;
+}
