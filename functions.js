@@ -20,5 +20,5 @@ function getAnswer() {
 }
 
 function redirectToCountdown() {
-    window.location.href="/countdown/index.html";
+    window.location.href="/countdown";
 }
