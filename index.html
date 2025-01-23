@@ -11,15 +11,6 @@
 </head>
 <body>
     <main-header></main-header>
-    <!-- <header class="blog-header py-2">
-        <div class="nav-scroller py-1 mb-1">
-            <div class="nav d-flex" id="headerNav">
-                <a class="p-1 text-white" href="/">Home</a>
-                <a class="p-1 text-white" href="/">Projects</a>
-                <a class="p-1 text-white" href="/">UNSW</a>
-            </div>
-        </div>
-    </header> -->
     <main>
         <div class="container" id="main-page">
             <div class="jumbotron p-3">
@@ -39,14 +30,14 @@
     
         <section id="showcase">
             <div class="col-md-6">
-                <button class="col-md-12" onclick="redirectToCountdown()">
+                <button class="col-md-12" onclick="redirectToWebpage(`projects`)">
                     <div class="flex-md-flow mb-2 mx-1">
                         <h1 class="text-center">Projects</h1>
                     </div>
                 </button>
             </div>
             <div class="col-md-6">
-                <button class="col-md-12">
+                <button class="col-md-12" onclick="redirectToWebpage(`countdown`)">
                     <div class="flex-md-flow mb-2 mx-1">
                         <h1 class="text-center">UNSW</h1>
                     </div>
@@ -81,6 +72,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="functions.js"></script>
-
+    <script src="header.js"></script>
 </body>
 </html>
