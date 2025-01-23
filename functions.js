@@ -19,3 +19,6 @@ function getAnswer() {
     })
 }
 
+function redirectToWebpage(weblink) {
+    window.location.href= weblink;
+}
