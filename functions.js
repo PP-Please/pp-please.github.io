@@ -25,8 +25,13 @@ function redirectToWebpage(weblink) {
 
 const offScreenMenu = document.querySelector('.off-screen-menu');
 const hamburger = document.getElementById("hamburger");
+const exitOffScreenmenu = document.querySelector('.exit-off-screen-menu');
 
 hamburger.addEventListener("click", () => {
+    offScreenMenu.classList.toggle('active');
+})
+
+exitOffScreenmenu?.addEventListener('click', () => {
     offScreenMenu.classList.toggle('active');
 })
 

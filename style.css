@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -106,23 +105,42 @@ html {
 
 .off-screen-menu.active {
     right: 0vh;
+    width: 110vw;
 }
 
 @media (max-width: 576px) {
 
-    .nav-right {
+    .nav-main {
         display: none;
-        /* list-style: none; */
+        list-style: none;
         top: 100%;
         right: 0;
-        background-color: #333;
-        width: 200px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        padding: 10px 0;
     }
 
     #hamburger {
         display: block;
+        position: absolute;
+        right: 5px;
+        border: none;
+    }
+
+    .exit-off-screen-menu {
+        position: absolute;
+        top: 20px;
+    }
+
+    .off-screen-menu .nav-right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .off-screen-menu .nav-item {
+        display: block;
+    }
+
+    .off-screen-menu .nav-link {
+        font-size: 0.75em;
     }
 }
 

@@ -3,8 +3,8 @@ class Header extends HTMLElement {
         this.innerHTML = `
             <header class="blog-header">
             <a class="navbar-brand" href="">Kelvin</a>
-            <button class="hamburger" id="hamburger">Hamburger</button>
-                <nav aria-label="main menu">
+            <button class="hamburger" id="hamburger">☰</button>
+                <nav class="nav-main" aria-label="main menu">
                     <ul class="nav-right" id="nav-right">
                         <li class="nav-item">
                             <a class="nav-link" href="">Home</a>
@@ -19,6 +19,7 @@ class Header extends HTMLElement {
                 </nav>
             
             <div class="off-screen-menu">
+                <button class="exit-off-screen-menu">X</button>
                 <ul class="nav-right" id="nav-right">
                     <li class="nav-item">
                         <a class="nav-link" href="">Home</a>
