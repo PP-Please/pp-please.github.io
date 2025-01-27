@@ -2,6 +2,7 @@
     color-scheme: light dark;
   }
 
+  
 body {
     padding-top: 56px;
     background-color: #181818;
@@ -81,6 +82,7 @@ html {
 
 #hamburger {
     display: none;
+    color: #fff;
 }
 
 .off-screen-menu {
@@ -97,15 +99,14 @@ html {
     text-align: center;
     font-size: 3rem;
     transition: .5s;
-    /* box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    overflow: hidden; */
 }
 
 .off-screen-menu.active {
-    right: 0vh;
-    width: 110vw;
+    right: 0;
+    width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -133,6 +134,8 @@ html {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        align-items: center;
+        text-align: center;
     }
 
     .off-screen-menu .nav-item {
@@ -141,6 +144,8 @@ html {
 
     .off-screen-menu .nav-link {
         font-size: 0.75em;
+        text-align: center;
+        align-items: center;
     }
 }
 
