@@ -22,3 +22,28 @@ function getAnswer() {
 function redirectToWebpage(weblink) {
     window.location.href= weblink;
 }
+
+const offScreenMenu = document.querySelector('.off-screen-menu');
+const hamburger = document.getElementById("hamburger");
+
+hamburger.addEventListener("click", () => {
+    offScreenMenu.classList.toggle('active');
+})
+
+// function toggleHamburger() {
+    // const isActiveLink = document.getElementById('nav-right');
+    // const hamburger = document.getElementById('hamburger');
+
+    // if (!isActiveLink || !hamburger) {
+    //     console.log('bruh');
+    //     return;
+    // }
+
+    // if (isActiveLink.style.display === "none") {
+    //     isActiveLink.style.display = "flex";
+    //     // hamburger.style.display = "none";
+
+    // } else {
+    //     isActiveLink.style.display = "none";
+    // }
+// }
